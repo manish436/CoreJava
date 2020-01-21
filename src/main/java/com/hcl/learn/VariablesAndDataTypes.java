@@ -75,11 +75,20 @@ public class VariablesAndDataTypes {
 		System.out.println("myArray[7]: " + myArray[6]);
 	}
 
+	static boolean search(int[] list, int key) {
+		return true;
+	}
+
 	public static void main(String[] args) {
 		// Language Basics 1
 		// print();
 		// primitives();
 		// typeCasting();
 		arrays();
+		int[] anArray = { 32, 43, 12 };
+		// anArray = { 32, 43, 12 }; not allowed.
+
+		// search({21,31}, 21); //not allowed
+		search(new int[] { 21, 31 }, 21);
 	}
 }
