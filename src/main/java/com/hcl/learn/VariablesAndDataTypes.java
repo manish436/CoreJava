@@ -99,6 +99,12 @@ public class VariablesAndDataTypes {
 		updateId(id, st);
 		System.out.println("Dones not change id:" + id);
 		System.out.println("But change refrence object:" + st.newId);
+
+		// Array in JAVA is also pass by reference like objects
+		int[] array = { 1, 2 };
+		goArray(array);
+
+		System.out.println("Array will be affected:" + array[1]);
 	}
 
 	static void updateId(int newId, Student st) {
@@ -106,6 +112,9 @@ public class VariablesAndDataTypes {
 		st.newId = 1001;
 	}
 
+	static void goArray(int[] array) {
+		array[1] = 22;
+	}
 }
 
 class Student {
