@@ -90,5 +90,24 @@ public class VariablesAndDataTypes {
 
 		// search({21,31}, 21); //not allowed
 		search(new int[] { 21, 31 }, 21);
+
+		// JAVA is pass by value not pass by refrence
+		int id = 1000;
+		Student st = new Student();
+		st.newId = 1000;
+
+		updateId(id, st);
+		System.out.println("Dones not change id:" + id);
+		System.out.println("But change refrence object:" + st.newId);
 	}
+
+	static void updateId(int newId, Student st) {
+		newId = 1001;
+		st.newId = 1001;
+	}
+
+}
+
+class Student {
+	int newId;
 }
