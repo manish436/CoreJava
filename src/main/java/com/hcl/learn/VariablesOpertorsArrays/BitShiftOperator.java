@@ -17,7 +17,11 @@ public class BitShiftOperator {
 		// i.e. 00000000 00000000 00000000 00000110
 		// now the output will be 12
 		System.out.println(x << 1);
-		// Mathematically: x * pow(2, numberOfBitShift);   
+		// Mathematically: x * pow(2, numberOfBitShift);
+		double a = 8 * Math.pow(2, 3);
+		System.out.println(a);
+		
+		// for right shift: x / pow(2, numberOfBitShift);
 	}
 
 	public static void main(String[] args) {
