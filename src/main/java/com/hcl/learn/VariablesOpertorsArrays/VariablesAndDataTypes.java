@@ -93,7 +93,7 @@ public class VariablesAndDataTypes {
 
 		// JAVA is pass by value not pass by refrence
 		int id = 1000;
-		Student st = new Student();
+		Students st = new Students();
 		st.newId = 1000;
 
 		updateId(id, st);
@@ -107,7 +107,7 @@ public class VariablesAndDataTypes {
 		System.out.println("Array will be affected:" + array[1]);
 	}
 
-	static void updateId(int newId, Student st) {
+	static void updateId(int newId, Students st) {
 		newId = 1001;
 		st.newId = 1001;
 	}
@@ -117,6 +117,6 @@ public class VariablesAndDataTypes {
 	}
 }
 
-class Student {
+class Students {
 	int newId;
 }
