@@ -1,4 +1,4 @@
-package com.hcl.learn;
+package com.hcl.learn.VariablesOpertorsArrays;
 
 import org.springframework.stereotype.Service;
 

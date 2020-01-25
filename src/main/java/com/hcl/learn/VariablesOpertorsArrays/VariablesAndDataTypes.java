@@ -1,4 +1,4 @@
-package com.hcl.learn;
+package com.hcl.learn.VariablesOpertorsArrays;
 
 public class VariablesAndDataTypes {
 	// Adapted from

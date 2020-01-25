@@ -1,4 +1,4 @@
-package com.hcl.learn.exercise1;
+package com.hcl.learn.ConstructorAndOverLoading;
 
 //Constructor Overloading and using this keyword example.
 public class Instructor {
