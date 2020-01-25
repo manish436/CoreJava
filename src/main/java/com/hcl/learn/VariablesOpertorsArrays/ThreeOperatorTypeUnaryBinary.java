@@ -1,6 +1,6 @@
 package com.hcl.learn.VariablesOpertorsArrays;
 
-public class ThreeOperatorType {
+public class ThreeOperatorTypeUnaryBinary {
 
 	// Unary Operator
 	public void unaryOperatorExample() {
