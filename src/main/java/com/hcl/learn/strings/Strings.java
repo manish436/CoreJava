@@ -6,7 +6,7 @@ package com.hcl.learn.strings;
 // String class usages character array to store text.
 // Usages UTF-16.
 // String contain "immutable" unicode characters.
-// When we say immutable that means, String object is immutable but Object refrence can be changed many times.
+// When we say immutable that means, String object is immutable but Object reference can be changed many times.
 
 // String can be created in two ways:
 // 1. Using String literal
