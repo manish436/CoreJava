@@ -45,6 +45,8 @@ package com.hcl.learn.strings;
 // Item - 51 : Beware the performance of string concatenation.
 // Use StringBuilder instead of + operator.
 
+
+// Anything concatenated at run-time MUST go outside string pool.
 public class Strings {
 
 	static void stringExamples() {
@@ -114,8 +116,9 @@ public class Strings {
 		System.out.println("s1 == s4: " + (s1 == s4));
 		System.out.println("s1 == s4.intern(): " + (s1 == s4.intern()));
 		System.out.println("s1 == \"hel\" + \"lo!\": " + (s1 == "hel" + "lo!"));
-		System.out.println("s1 == \"hel\" + s5: " + (s1 == "hel" + s5));// Not defined at compile time, hence it("hel" +
-																		// s5) will not be stored interned.
+		
+		// Anything concatenated at run-time MUST go outside string pool.
+		System.out.println("s1 == \"hel\" + s5: " + (s1 == "hel" + s5));// Not defined at compile time, hence it("hel" + s5) will not be stored interned.
 	}
 
 	static void stringBuilder() {
